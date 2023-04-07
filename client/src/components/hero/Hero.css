@@ -56,14 +56,13 @@
 .play-button-icon {
   padding: 0px;
   margin: 0px;
-  color: gold;
+  color: white;
   font-size: 3rem;
   transition: 0.3s;
   cursor: pointer;
 }
 .play-button-icon:hover {
-  font-size: 4rem;
-  color: white;
+  color: gold;
 }
 
 @media only screen and (max-width: 800px) {

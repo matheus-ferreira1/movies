@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./components/home/Home";
 import "./App.css";
 import Header from "./components/header/Header";
+import Trailer from "./components/trailer/Trailer";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -27,9 +28,20 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home movies={movies} />} />
-        </Route>
+        <Route path="/" element={<Home movies={movies} />}></Route>
+        <Route path="/Trailer/:ytTrailerId" element={<Trailer />} />
+        {/* <Route
+            path="/Reviews/:movieId"
+            element={
+              <Reviews
+                getMovieData={getMovieData}
+                movie={movie}
+                reviews={reviews}
+                setReviews={setReviews}
+              />
+            }
+          ></Route>
+          <Route path="*" element={<NotFound />}></Route> */}
       </Routes>
     </div>
   );
