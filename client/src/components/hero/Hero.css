@@ -4,7 +4,7 @@
 }
 .movie-poster {
   height: 300px;
-  border: 1px solid gold;
+  border: 1px solid gray;
   border-radius: 10px;
   overflow: hidden;
 }
