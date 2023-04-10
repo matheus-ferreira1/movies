@@ -16,7 +16,7 @@ const Hero = ({ movies }) => {
   return (
     <div className="movie-carousel-container">
       <Carousel>
-        {movies.map((movie) => (
+        {movies?.map((movie) => (
           <Paper key={movie.title}>
             <div className="movie-card-container">
               <div
@@ -44,14 +44,14 @@ const Hero = ({ movies }) => {
                       </div>
                     </Link>
 
-                    {/* <div className="movie-review-button-container">
+                    <div className="movie-review-button-container">
                       <Button
                         variant="info"
                         onClick={() => reviews(movie.imdbId)}
                       >
                         Reviews
                       </Button>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
