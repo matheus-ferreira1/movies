@@ -24,9 +24,12 @@ const Header = () => {
             <NavLink className="nav-link" to="/">
               Home
             </NavLink>
-            <NavLink className="nav-link" to="/watchList">
+            <a className="nav-link" href="#">
               Watch List
-            </NavLink>
+            </a>
+            {/* <NavLink className="nav-link" to="/watchlist" disabled={true}>
+              Watch List
+            </NavLink> */}
           </Nav>
           <Button variant="outline-info" className="me-2">
             Login
